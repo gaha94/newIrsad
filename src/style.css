@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+a:hover,
+button:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
