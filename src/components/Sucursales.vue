@@ -1,7 +1,7 @@
 <template>
     <section
       id="sucursales"
-      class="py-5 border-top"
+      class="py-5 scroll-offset"
       :class="darkMode ? 'bg-dark text-white' : 'bg-light text-dark'"
     >
       <div class="container">

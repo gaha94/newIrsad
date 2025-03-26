@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+}
+
 a,
 button {
   transition: all 0.3s ease;
@@ -11,4 +15,8 @@ a:hover,
 button:hover {
   transform: scale(1.03);
   opacity: 0.9;
+}
+
+.scroll-offset {
+  scroll-margin-top: 60px; /* o ajusta según la altura real de tu navbar */
 }

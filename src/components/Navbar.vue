@@ -8,7 +8,7 @@
   >
     <div class="container">
       <!-- Logo -->
-      <a class="navbar-brand fw-bold text-danger" href="#inicio">IRSAD</a>
+      <a class="navbar-brand fw-bold text-danger" href="#heroe">IRSAD</a>
 
       <!-- Botón hamburguesa -->
       <button
@@ -34,9 +34,9 @@
             </a>
           </li>
           <!-- Dark Mode Toggle -->
-          <li class="nav-item ms-3">
-            <button class="btn btn-outline-danger btn-sm" @click="toggleDarkMode">
-              {{ darkMode ? '☀️' : '🌙' }}
+          <li class="nav-item d-flex align-items-center ms-3">
+            <button class="btn btn-sm rounded-circle border-0" aria-label="Toggle navigation":class="darkMode ? 'bg-warning text-dark' : 'bg-dark text-white'" @click="toggleDarkMode">
+              <i :class="darkMode ? 'bi bi-sun-fill' : 'bi bi-moon-fill'"></i>
             </button>
           </li>
         </ul>
@@ -53,12 +53,14 @@ const props = defineProps({ darkMode: Boolean })
 const emit = defineEmits(['toggle-dark-mode'])
 
 const items = [
-  { id: 'inicio', label: 'Inicio' },
+  { id: 'heroe', label: 'Heroe' },
   { id: 'nosotros', label: 'Nosotros' },
   { id: 'servicios', label: 'Servicios' },
   { id: 'marcas', label: 'Marcas' },
   { id: 'sucursales', label: 'Sucursales' },
-  { id: 'contacto', label: 'Contacto' }
+  { id: 'contacto', label: 'Contacto' },
+  { id: 'testimonios', label: 'Testimonios' },
+  { id: 'faq', label: 'FAQ' }
 ]
 
 const isScrolled = ref(false)
@@ -93,13 +95,34 @@ onBeforeUnmount(() => {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 .nav-link {
+  position: relative;
   font-weight: 500;
   transition: color 0.3s;
 }
 .nav-link:hover {
   color: #d1191a !important;
 }
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #d1191a;
+  transition: width 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
 .navbar-brand {
   font-size: 1.4rem;
 }
+.navbar {
+  backdrop-filter: blur(8px);
+}
+.navbar.shadow-sm {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
 </style>

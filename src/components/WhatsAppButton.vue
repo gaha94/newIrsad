@@ -10,7 +10,7 @@
   </template>
   
   <script setup>
-  const whatsappNumber = '51999333666' // Cambia esto por tu número (sin espacios)
+  const whatsappNumber = '51947229595' // Cambia esto por tu número (sin espacios)
   const message = 'Hola, me gustaría obtener más información sobre sus productos.'
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
   </script>
