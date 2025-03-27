@@ -1,9 +1,11 @@
 <template>
   <section 
     id="contacto"
-    class="py-5 scroll-offset"
+    class="contactos_section d-felx scroll-offset position-relative"
     :class="darkMode ? 'bg-dark text-white' : 'bg-light text-dark'"
+    style="min-height: 100vh; overflow: hidden;"
   >
+  <div class="overlay"></div>
     <div class="container">
       <h2 class="text-center fw-bold mb-5" :class="darkMode ? 'text-white' : 'text-danger'">Contáctanos</h2>
 
@@ -142,9 +144,23 @@ const handleSubmit = () => {
 </script>
 
 <style scoped>
+
+.contactos_section {
+  position: relative;
+    min-height: 80vh;
+    background-image: url('/img/backgrounds/contactanos-rojo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    scroll-margin-top: 100px;
+}
+
+
 input:focus, textarea:focus {
   border-color: #d1191a;
   box-shadow: 0 0 0 0.2rem rgba(209, 25, 26, 0.25);
   outline: none;
 }
+
 </style>

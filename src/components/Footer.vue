@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="footer mt-5 pt-5 pb-3 text-white"
+    class="footer pt-5 pb-3 text-white"
     :class="darkMode ? 'bg-dark' : 'footer-light'"
   >
     <div class="container">

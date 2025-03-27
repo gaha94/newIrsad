@@ -98,7 +98,7 @@ const toggle = (index) => {
       rgba(0, 0, 0, 0.6),  /* Overlay más oscuro */
       rgba(0, 0, 0, 0.6)
     ),
-    url('/public/img/backgrounds/how-to-unsend-emails.BpdHoz1C_2ugpO4.png');
+    url('/img/backgrounds/how-to-unsend-emails.BpdHoz1C_2ugpO4.png');
   background-size: cover;
   background-position: center;
   position: absolute;
