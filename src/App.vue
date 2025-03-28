@@ -25,6 +25,14 @@ onMounted(() => {
     darkMode.value = savedMode === 'true'
   }
 
+  const tooltipTriggerList = document.querySelectorAll('[v-tooltip]')
+  tooltipTriggerList.forEach(el => {
+    new bootstrap.Tooltip(el, {
+      title: el.getAttribute('v-tooltip'),
+      placement: 'top'
+    })
+  })
+
   // Mostrar loader 1s
   setTimeout(() => {
     isLoading.value = false

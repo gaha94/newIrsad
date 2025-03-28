@@ -10,7 +10,7 @@
 
     <div class="container position-relative z-1 py-5">
       <h1 class="display-4 fw-bold hero-title">
-        Bienvenido a <span class="text-warning">Irsad Peru</span>
+        Bienvenido a <span class="text-danger">Irsad Peru</span>
       </h1>
       <p class="lead my-4 hero-text">
         Ofrecemos soluciones modernas, confiables y con impacto.

@@ -25,12 +25,11 @@
           />
         </div>
         <div class="col-md-6">
-          <h2 class="text-danger fw-bold mb-3">Sobre Nosotros</h2>
+          <h2 class="text-danger fw-bold mb-5 text-shadow"
+          :class="darkMode ? 'text-white' : 'text-danger'"
+          >Sobre Nosotros</h2>
           <p>
             Somos una empresa comprometida con la excelencia, enfocada en ofrecer productos y servicios de calidad.
-          </p>
-          <p class="mb-0">
-            Nuestra misión es construir relaciones sólidas basadas en confianza, compromiso y resultados.
           </p>
         </div>
       </div>
@@ -128,5 +127,10 @@ onBeforeUnmount(() => {
 /* Movimiento suave del contenido */
 .parallax-content {
   transition: transform 0.2s ease-out;
+}
+
+h2 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 </style>

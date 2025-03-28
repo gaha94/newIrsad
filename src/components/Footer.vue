@@ -31,7 +31,7 @@
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold">Síguenos</h5>
           <div class="d-flex gap-3">
-            <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.facebook.com/irsadperu?locale=es_LA" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
             <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
             <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
             <a href="#" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>

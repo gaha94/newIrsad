@@ -16,4 +16,7 @@ const app = createApp(App)
 app.use(VueObserveVisibility) // 👈 ¡esto es clave!
 app.mount('#app')
 
-AOS.init()
+AOS.init({
+    duration: 800,
+    once: true
+  })

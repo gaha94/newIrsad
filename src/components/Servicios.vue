@@ -13,7 +13,7 @@
 
     <div class="container position-relative z-1">
       <h2
-        class="fw-bold text-center mb-5"
+        class="text-center fw-bold mb-5 text-shadow"
         :class="darkMode ? 'text-light' : 'text-danger'"
         data-aos="fade-up"
       >
@@ -146,5 +146,10 @@ const servicios = [
 }
 #servicios .container {
   padding-bottom: 0 !important;
+}
+
+h2 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 </style>
